@@ -17,7 +17,7 @@
             </tr>
         </thead>
         <tbody>
-            
+            <!-- Aquí comienza la lista de 100 etiquetas -->
             <tr><td>&lt;a&gt;</td><td>Define un hipervínculo. Se utiliza para enlazar a otra página o recurso.</td><td><code>&lt;a href="https://www.example.com"&gt;Visita Ejemplo&lt;/a&gt;</code></td><td>Se puede usar <code>target="_blank"</code> para abrir en nueva pestaña.</td></tr>
             <tr><td>&lt;p&gt;</td><td>Define un párrafo de texto.</td><td><code>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</code></td><td>Puede contener otros elementos en línea como &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;.</td></tr>
             <tr><td>&lt;img&gt;</td><td>Incrusta una imagen en la página.</td><td><code>&lt;img src="imagen.jpg" alt="Descripción"&gt;</code></td><td>Alt obligatorio para accesibilidad; se puede usar width y height.</td></tr>
