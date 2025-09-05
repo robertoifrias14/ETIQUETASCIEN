@@ -3,7 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <title>Lista de 100 Etiquetas HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
 </head>
 <body>
     <h1>Lista de 100 Etiquetas HTML</h1>
@@ -16,8 +51,8 @@
                 <th>Elemento Adicional</th>
             </tr>
         </thead>
-        
-            
+        <tbody>
+            <!-- Aquí comienza la lista de 100 etiquetas -->
             <tr><td>&lt;a&gt;</td><td>Define un hipervínculo. Se utiliza para enlazar a otra página o recurso.</td><td><code>&lt;a href="https://www.example.com"&gt;Visita Ejemplo&lt;/a&gt;</code></td><td>Se puede usar <code>target="_blank"</code> para abrir en nueva pestaña.</td></tr>
             <tr><td>&lt;p&gt;</td><td>Define un párrafo de texto.</td><td><code>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</code></td><td>Puede contener otros elementos en línea como &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;.</td></tr>
             <tr><td>&lt;img&gt;</td><td>Incrusta una imagen en la página.</td><td><code>&lt;img src="imagen.jpg" alt="Descripción"&gt;</code></td><td>Alt obligatorio para accesibilidad; se puede usar width y height.</td></tr>
@@ -96,35 +131,8 @@
             <tr><td>&lt;picture&gt;</td><td>Contenedor de imágenes adaptativas.</td><td><code>&lt;picture&gt;&lt;source srcset="img.webp" type="image/webp"&gt;&lt;img src="img.jpg" alt=""&gt;&lt;/picture&gt;</code></td><td>Permite imágenes responsivas y formatos alternativos.</td></tr>
             <tr><td>&lt;template&gt;</td><td>Contenido HTML que no se renderiza automáticamente.</td><td><code>&lt;template&gt;&lt;p&gt;Plantilla&lt;/p&gt;&lt;/template&gt;</code></td><td>Se muestra solo con JS.</td></tr>
             <tr><td>&lt;slot&gt;</td><td>Inserta contenido en Web Components.</td><td><code>&lt;slot name="contenido"&gt;&lt;/slot&gt;</code></td><td>Solo dentro de Custom Elements.</td></tr>
-            <tr><td>&lt;details&gt;</td><td>Elemento que crea un panel desplegable.</td><td><code>&lt;details&gt;&lt;summary&gt;Más info&lt;/summary&gt;Contenido oculto&lt;/details&gt;</code></td><td>&lt;summary&gt; indica el título del panel.</td></tr>
-<tr><td>&lt;summary&gt;</td><td>Título visible de &lt;details&gt;.</td><td><code>&lt;summary&gt;Ver detalles&lt;/summary&gt;</code></td><td>Siempre dentro de &lt;details&gt;.</td></tr>
-<tr><td>&lt;menu&gt;</td><td>Lista de comandos o menú.</td><td><code>&lt;menu&gt;&lt;li&gt;Opción 1&lt;/li&gt;&lt;/menu&gt;</code></td><td>Puede ser de tipo toolbar o context.</td></tr>
-<tr><td>&lt;menuitem&gt;</td><td>Elemento de menú individual.</td><td><code>&lt;menuitem label="Guardar" icon="guardar.png"&gt;</code></td><td>Deprecado en HTML5, usar alternativas.</td></tr>
-<tr><td>&lt;map&gt;</td><td>Define un mapa de imagen.</td><td><code>&lt;img src="mapa.jpg" usemap="#mapa"&gt;&lt;map name="mapa"&gt;&lt;/map&gt;</code></td><td>Usa &lt;area&gt; para zonas clicables.</td></tr>
-<tr><td>&lt;area&gt;</td><td>Define área clicable dentro de &lt;map&gt;.</td><td><code>&lt;area shape="rect" coords="0,0,50,50" href="pagina.html"&gt;</code></td><td>Se usa con &lt;map&gt; y &lt;img usemap&gt;.</td></tr>
-<tr><td>&lt;iframe&gt;</td><td>Incrusta otra página dentro de la actual.</td><td><code>&lt;iframe src="pagina.html" width="300" height="200"&gt;&lt;/iframe&gt;</code></td><td>Se puede usar sandbox para seguridad.</td></tr>
-<tr><td>&lt;colgroup&gt;</td><td>Define un grupo de columnas en tabla.</td><td><code>&lt;colgroup&gt;&lt;col span="2"&gt;&lt;/colgroup&gt;</code></td><td>Permite aplicar estilos a varias columnas.</td></tr>
-<tr><td>&lt;col&gt;</td><td>Define una columna dentro de &lt;colgroup&gt;.</td><td><code>&lt;col span="1"&gt;</code></td><td>Se puede usar style para ancho o color.</td></tr>
-<tr><td>&lt;caption&gt;</td><td>Título de una tabla.</td><td><code>&lt;caption&gt;Tabla de Usuarios&lt;/caption&gt;</code></td><td>Debe ser el primer hijo de &lt;table&gt;.</td></tr>
-<tr><td>&lt;thead&gt;</td><td>Encabezado de tabla.</td><td><code>&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Nombre&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</code></td><td>Separa semánticamente las cabeceras.</td></tr>
-<tr><td>&lt;tbody&gt;</td><td>Cuerpo de la tabla.</td><td><code>&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Dato&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;</code></td><td>Contiene filas de datos.</td></tr>
-<tr><td>&lt;tfoot&gt;</td><td>Pie de la tabla.</td><td><code>&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Total&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;</code></td><td>Opcional, se coloca al final.</td></tr>
-<tr><td>&lt;tr&gt;</td><td>Fila de tabla.</td><td><code>&lt;tr&gt;&lt;td&gt;Dato&lt;/td&gt;&lt;/tr&gt;</code></td><td>Debe estar dentro de &lt;thead&gt;, &lt;tbody&gt; o &lt;tfoot&gt;.</td></tr>
-<tr><td>&lt;td&gt;</td><td>Celda de datos.</td><td><code>&lt;td&gt;Dato&lt;/td&gt;</code></td><td>Dentro de &lt;tr&gt;.</td></tr>
-<tr><td>&lt;th&gt;</td><td>Celda de encabezado.</td><td><code>&lt;th&gt;Título&lt;/th&gt;</code></td><td>Texto centrado y en negrita por defecto.</td></tr>
-<tr><td>&lt;colgroup&gt;</td><td>Grupo de columnas en tabla.</td><td><code>&lt;colgroup&gt;&lt;col&gt;&lt;/colgroup&gt;</code></td><td>Define ancho o estilo conjunto de columnas.</td></tr>
-<tr><td>&lt;track&gt;</td><td>Subtítulos para multimedia.</td><td><code>&lt;track kind="subtitles" src="sub.vtt" srclang="es"&gt;</code></td><td>Permite mostrar subtítulos o descripciones.</td></tr>
-<tr><td>&lt;template&gt;</td><td>Plantilla HTML no renderizada.</td><td><code>&lt;template&gt;&lt;p&gt;Contenido&lt;/p&gt;&lt;/template&gt;</code></td><td>Se activa con JS.</td></tr>
-<tr><td>&lt;slot&gt;</td><td>Marcador de contenido en Web Components.</td><td><code>&lt;slot name="contenido"&gt;&lt;/slot&gt;</code></td><td>Reemplazable desde componente padre.</td></tr>
-<tr><td>&lt;dialog&gt;</td><td>Ventana modal o cuadro de diálogo.</td><td><code>&lt;dialog open&gt;Mensaje&lt;/dialog&gt;</code></td><td>Se puede abrir o cerrar con JS.</td></tr>
-<tr><td>&lt;picture&gt;</td><td>Imágenes adaptables según tamaño o formato.</td><td><code>&lt;picture&gt;&lt;source srcset="img.webp" type="image/webp"&gt;&lt;img src="img.jpg"&gt;&lt;/picture&gt;</code></td><td>Soporta responsive y webp.</td></tr>
-<tr><td>&lt;mark&gt;</td><td>Resalta texto.</td><td><code>&lt;mark&gt;Resaltado&lt;/mark&gt;</code></td><td>Color amarillo por defecto.</td></tr>
-<tr><td>&lt;wbr&gt;</td><td>Indica posible salto de línea.</td><td><code>EstaEsUnaPalabra<wbr>MuyLarga</code></td><td>No genera espacio visual.</td></tr>
-<tr><td>&lt;noscript&gt;</td><td>Contenido alternativo si JS está deshabilitado.</td><td><code>&lt;noscript&gt;Activa JS para ver el contenido&lt;/noscript&gt;</code></td><td>Solo se renderiza sin JS.</td></tr>
-<tr><td>&lt;base&gt;</td><td>URL base para enlaces relativos.</td><td><code>&lt;base href="https://ejemplo.com"&gt;</code></td><td>Se coloca en &lt;head&gt;.</td></tr>
-<tr><td>&lt;meta&gt;</td><td>Metadatos de la página.</td><td><code>&lt;meta name="description" content="Página ejemplo"&gt;</code></td><td>SEO y compatibilidad.</td></tr>
-
-       
+            <tr><td>&lt;details&gt;</td><td>
+</tbody>
     </table>
 </body>
 </html>
