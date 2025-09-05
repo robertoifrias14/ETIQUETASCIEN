@@ -96,7 +96,28 @@
             <tr><td>&lt;picture&gt;</td><td>Contenedor de imágenes adaptativas.</td><td><code>&lt;picture&gt;&lt;source srcset="img.webp" type="image/webp"&gt;&lt;img src="img.jpg" alt=""&gt;&lt;/picture&gt;</code></td><td>Permite imágenes responsivas y formatos alternativos.</td></tr>
             <tr><td>&lt;template&gt;</td><td>Contenido HTML que no se renderiza automáticamente.</td><td><code>&lt;template&gt;&lt;p&gt;Plantilla&lt;/p&gt;&lt;/template&gt;</code></td><td>Se muestra solo con JS.</td></tr>
             <tr><td>&lt;slot&gt;</td><td>Inserta contenido en Web Components.</td><td><code>&lt;slot name="contenido"&gt;&lt;/slot&gt;</code></td><td>Solo dentro de Custom Elements.</td></tr>
-            <tr><td>&lt;details&gt;</td><td>
+            <tr><td>&lt;details&gt;</td><td>Elemento que muestra información adicional que el usuario puede expandir o colapsar.</td><td><code>&lt;details&gt;&lt;summary&gt;Más info&lt;/summary&gt;Contenido adicional&lt;/details&gt;</code></td><td>El &lt;summary&gt; define el encabezado visible.</td></tr>
+<tr><td>&lt;summary&gt;</td><td>Encabezado de un &lt;details&gt;.</td><td><code>&lt;summary&gt;Título&lt;/summary&gt;</code></td><td>Siempre va dentro de &lt;details&gt;.</td></tr>
+<tr><td>&lt;menu&gt;</td><td>Lista de comandos o menú de navegación.</td><td><code>&lt;menu&gt;&lt;li&gt;Opción&lt;/li&gt;&lt;/menu&gt;</code></td><td>Puede ser de tipo contextual o toolbar.</td></tr>
+<tr><td>&lt;menuitem&gt;</td><td>Elemento dentro de &lt;menu&gt;.</td><td><code>&lt;menuitem label="Guardar"&gt;</code></td><td>Definición de comando dentro de menú.</td></tr>
+<tr><td>&lt;object&gt;</td><td>Contenedor para recursos externos, como PDFs o applets.</td><td><code>&lt;object data="archivo.pdf"&gt;&lt;/object&gt;</code></td><td>Usar <code>&lt;param&gt;</code> para opciones adicionales.</td></tr>
+<tr><td>&lt;param&gt;</td><td>Define parámetros para objetos embebidos.</td><td><code>&lt;param name="autoplay" value="true"&gt;</code></td><td>Solo dentro de &lt;object&gt;.</td></tr>
+<tr><td>&lt;blockquote&gt;</td><td>Cita de bloque, larga o destacada.</td><td><code>&lt;blockquote&gt;Cita larga&lt;/blockquote&gt;</code></td><td>Puedes usar atributo <code>cite</code>.</td></tr>
+<tr><td>&lt;q&gt;</td><td>Cita en línea.</td><td><code>&lt;q&gt;Cita corta&lt;/q&gt;</code></td><td>Se renderiza entre comillas automáticamente.</td></tr>
+<tr><td>&lt;noscript&gt;</td><td>Contenido mostrado si JS está desactivado.</td><td><code>&lt;noscript&gt;Habilita JS&lt;/noscript&gt;</code></td><td>Útil para mensajes de degradación.</td></tr>
+<tr><td>&lt;script&gt;</td><td>Script JavaScript embebido o externo.</td><td><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></td><td>Puede estar en &lt;head&gt; o al final del &lt;body&gt;.</td></tr>
+<tr><td>&lt;canvas&gt;</td><td>Área de gráficos 2D o 3D con JS.</td><td><code>&lt;canvas id="miCanvas"&gt;&lt;/canvas&gt;</code></td><td>Se manipula con JS.</td></tr>
+<tr><td>&lt;svg&gt;</td><td>Gráficos vectoriales escalables.</td><td><code>&lt;svg&gt;&lt;circle cx="50" cy="50" r="40"/&gt;&lt;/svg&gt;</code></td><td>Se puede manipular con CSS y JS.</td></tr>
+<tr><td>&lt;math&gt;</td><td>Contiene fórmulas matemáticas (MathML).</td><td><code>&lt;math&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/math&gt;</code></td><td>Usado en contenido científico y educativo.</td></tr>
+<tr><td>&lt;iframe&gt;</td><td>Incrusta otra página web.</td><td><code>&lt;iframe src="pagina.html"&gt;&lt;/iframe&gt;</code></td><td>Se puede usar width, height y sandbox.</td></tr>
+<tr><td>&lt;link&gt;</td><td>Enlaza recursos externos, como CSS.</td><td><code>&lt;link rel="stylesheet" href="estilos.css"&gt;</code></td><td>Solo en &lt;head&gt;.</td></tr>
+<tr><td>&lt;meta&gt;</td><td>Metadatos del documento.</td><td><code>&lt;meta charset="UTF-8"&gt;</code></td><td>Dentro de &lt;head&gt;.</td></tr>
+<tr><td>&lt;base&gt;</td><td>URL base para enlaces relativos.</td><td><code>&lt;base href="https://www.example.com"&gt;</code></td><td>Se coloca en &lt;head&gt; y afecta todos los enlaces.</td></tr>
+<tr><td>&lt;colgroup&gt;</td><td>Agrupa columnas en una tabla.</td><td><code>&lt;colgroup&gt;&lt;col span="2"&gt;&lt;/colgroup&gt;</code></td><td>Define estilos o anchos de columna.</td></tr>
+<tr><td>&lt;col&gt;</td><td>Define una columna dentro de &lt;colgroup&gt;.</td><td><code>&lt;col style="background:red"&gt;</code></td><td>Solo dentro de &lt;colgroup&gt;.</td></tr>
+<tr><td>&lt;caption&gt;</td><td>Título de una tabla.</td><td><code>&lt;caption&gt;Mi Tabla&lt;/caption&gt;</code></td><td>Se coloca inmediatamente después de &lt;table&gt;.</td></tr>
+<tr><td>&lt;thead&gt;</td><td>Sección de encabezado de tabla.</td><td><code>&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Encabezado&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</code></td><td>Separa visual y semánticamente el encabezado.</td></tr>
+<tr><td>&lt;tbody&gt;</td><td>Sección de cuerpo de tabla.</td><td><code>&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Dato&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;</code></td><td>Para organizar filas de datos.</td></tr>
 </tbody>
     </table>
 </body>
